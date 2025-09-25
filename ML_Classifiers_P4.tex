@@ -1,0 +1,40 @@
+1) Feature scaling for gradient based algorithms is important because of
+    - Features might contribute differently depending on there scale which 
+    causes false predictions
+    - Standardization allows a more stable and faster optimization because 
+    the algorithm wont jump in different step sizes over the values and 
+    rather drives towords the optimum more smoothly
+
+2) Batch Gradient Descent 
+    - uses entire dataset to compute gradients which makes it expensive for large ones but 
+    ideal for smaller ones
+    - ideal for convex problems where global minima are guaranteed
+
+    Stochastic Gradient Descent
+    - uses only one random sample which is faster and more 
+    suitable for large datasets
+    - is robust because wont get stuck in local minima but 
+    might miss the optimum because of two large step sizes
+
+3) Why does scikit-learn Perceptron and Adaline outperform book code?
+    - The learning rate is fix in the book code, while scikit-learn 
+    uses time-based adaptive methods, which stabilizes late training
+    - Scikit-learn supports early stopping which performes better 
+    timewise and avoids overfitting
+    - The bookcode has no regularization, so no L2/L1 penalties which 
+    allows weights to grow too much which leads to overfitting
+    - There is weight averaging in scikit-learn which reduzes noise 
+    and allows a better generalization
+    
+4)
+
+5) L1 and L2 add constraints on model complexity by penalizing large weights
+        -L1 (Lasso): Encourages sparsity -> Feature selection
+        -L2 (Ridge): Shrinks weights -> Prevents dominance of 
+            specific Features
+    - It prevents the model to overfit by preventing fitting on noise 
+    and improves generalization
+
+6) The C parameter controls the strength of regularization, where 
+    a small value describes strong regularization and a high value weak 
+    regularization
