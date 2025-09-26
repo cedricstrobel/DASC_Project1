@@ -26,7 +26,14 @@
     - There is weight averaging in scikit-learn which reduzes noise 
     and allows a better generalization
     
-4)
+4) While the LR decision boundary is linear and corresponds to the points 
+    where the model predicts a probability of 0.5, the SVM can have non
+    linear boundaries with the use of kernels and its purpose is to 
+    maximize the margin between the two classes. 
+    A differece is that outliners can affect LR boundaries strongly, while 
+    they have less impact on SVM boundaries unless they lie within the margin.
+    Finally the result differs too, LR will give probabilities, while 
+    SVM only provides hard decision boundaries as classification
 
 5) L1 and L2 add constraints on model complexity by penalizing large weights
         -L1 (Lasso): Encourages sparsity -> Feature selection
@@ -37,4 +44,6 @@
 
 6) The C parameter controls the strength of regularization, where 
     a small value describes strong regularization and a high value weak 
-    regularization
+    regularization. 
+    In action it shows that a higher C value leads to a lower mean-test-score.
+    For both models C=100 performed the best.
