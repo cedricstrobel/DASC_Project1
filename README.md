@@ -40,5 +40,5 @@ The goal is to preprocess the data, train/evaluate models, and generate predicti
   Overview of the project (this file).
 
 ## Contributors
-- Group 28 – Andrew Mendez & teammates
+- Group 28 – Andrew Mendez & Cedric Strobel
 ---
