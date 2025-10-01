@@ -15,9 +15,9 @@ The goal is to preprocess the data, train/evaluate models, and generate predicti
 
 ### Notebooks
 - **ML_Classifiers_P1_P2_P3_P4.ipynb**  
-  Jupyter notebook implementing custom Perceptron and Adaline algorithms, model evaluation, and visualization.
+  Jupyter notebook implementing P1-P4
 - **sklearn_Perceptron_Adaline.ipynb**  
-  Jupyter notebook using scikit-learn’s implementations of Perceptron, Adaline (via SGDClassifier), Logistic Regression, and SVM, along with hyperparameter tuning (GridSearchCV).
+  Jupyter notebook using scikit-learn’s implementations of Logistic Regression and SVM.
 
 ### Outputs
 - **Group_28_Perceptron_PredictedOutputs.csv**  
